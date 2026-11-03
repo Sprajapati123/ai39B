@@ -30,6 +30,10 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+        <category android:name="android.intent.category.LAUNCHER" />
+
+        <!-- Mandatory for Android TV to detect the app -->
+        <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
     </application>
     <!-- Required to query activities that can process text, see:
          https://developer.android.com/training/package-visibility and
