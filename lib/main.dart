@@ -1,4 +1,4 @@
-import 'package:ai39b/login_screen.dart';
+import 'package:ai39b/view/authentication/login_screen.dart';
 import 'package:ai39b/profile_screen.dart';
 import 'package:flutter/material.dart';
 

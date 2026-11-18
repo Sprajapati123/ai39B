@@ -14,8 +14,6 @@ class _LoginScreenState extends State<LoginScreen> {
 
   bool visibility = true;
 
-  
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -54,9 +52,9 @@ class _LoginScreenState extends State<LoginScreen> {
                     visibility = !visibility;
                   });
                 },
-                icon: Icon(visibility== true
-                    ? Icons.visibility
-                    : Icons.visibility_off),
+                icon: Icon(
+                  visibility == true ? Icons.visibility : Icons.visibility_off,
+                ),
               ),
               hint: Text("********"),
               filled: true,
@@ -68,6 +66,33 @@ class _LoginScreenState extends State<LoginScreen> {
               focusedBorder: OutlineInputBorder(
                 borderSide: BorderSide(color: Colors.blue, width: 1),
                 borderRadius: BorderRadius.circular(12),
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                Text("Forget Password?", style: TextStyle(color: Colors.grey)),
+              ],
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 12),
+            child: SizedBox(
+              height: 50,
+              width: double.infinity,
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(5),
+                  ),
+                  backgroundColor: Colors.blue,
+                  foregroundColor: Colors.white,
+                ),
+                onPressed: () {},
+                child: Text("Log In"),
               ),
             ),
           ),
