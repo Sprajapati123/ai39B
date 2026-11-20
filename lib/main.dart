@@ -1,5 +1,6 @@
 import 'package:ai39b/view/authentication/login_screen.dart';
 import 'package:ai39b/profile_screen.dart';
+import 'package:ai39b/view/dashboard/dashboard_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: LoginScreen(),
+      home: DashboardScreen(),
     );
   }
 }
