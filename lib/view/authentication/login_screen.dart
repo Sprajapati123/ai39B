@@ -96,6 +96,8 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
             ),
           ),
+
+          Text("Dont have an account? Sign up")
         ],
       ),
     );

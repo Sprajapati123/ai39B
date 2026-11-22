@@ -18,8 +18,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
     return Scaffold(
       // appBar: AppBar(),
       body: PageView(
-        onPageChanged: (index){
-          setState(() {
+        onPageChanged: (index){setState(() {
             selectedIndex = index;
           });
         },
@@ -48,7 +47,6 @@ class _DashboardScreenState extends State<DashboardScreen> {
 
         ],
       ),
-
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: selectedIndex,
         onTap: (index){
